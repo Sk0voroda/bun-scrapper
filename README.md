@@ -1,15 +1,17 @@
-# Elysia with Bun runtime
-
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+# Scraping service
 
 ## Development
+
 To start the development server run:
+
 ```bash
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+## Guide
+
+- `fp-ts` `Either` used for error handling. `isLeft` used to check if `error` exists. (can be imported as `isError`)
+
+## Knowhow
+
+- azure translate json format - `[{ text: product.title }]` (fucking azure)

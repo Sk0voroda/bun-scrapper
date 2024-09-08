@@ -1,15 +1,28 @@
 {
-  "name": "1688_scrapper_service",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "1688_scrapper_service",
+	"version": "1.0.50",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "bun run --watch src/index.ts",
+		"scrape": "bun run src/playwright/main.ts"
+	},
+	"dependencies": {
+		"@types/uuid": "^10.0.0",
+		"elysia": "latest",
+		"fp-ts": "^2.16.9",
+		"playwright": "^1.46.1",
+		"playwright-extra": "^4.3.6",
+		"puppeteer-extra-plugin-stealth": "^2.11.2",
+		"uuid": "^10.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.9.1",
+		"bun-types": "latest",
+		"eslint": "^9.9.1",
+		"eslint-config-prettier": "^9.1.0",
+		"globals": "^15.9.0",
+		"prettier": "^3.3.3",
+		"typescript-eslint": "^8.3.0"
+	},
+	"module": "src/index.js"
 }
